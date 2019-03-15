@@ -8,12 +8,13 @@ import {CRUDComponent} from './crud/crud.component';
 
 
 const routes: Routes = [
+
+
 {path:'', component: HomeComponent},
 {path:'calc', component: CalcComponent},
 {path:'ps', component: Positivo_NegativoComponent},
 {path:'imc', component: IMCComponent},
 {path: 'crud', component: CRUDComponent}
-
 
 
 

@@ -10,6 +10,7 @@ import {CRUDComponent} from './crud/crud.component';
 import { FormsModule } from '@angular/forms' ;
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +19,7 @@ import { FormsModule } from '@angular/forms' ;
     Positivo_NegativoComponent,
     IMCComponent,
     CRUDComponent,
+
 
 
 

@@ -6,7 +6,39 @@
       <a routerLink="ps" class="nav-link text-white"> Positivo/Negativo </a>
       <a routerLink="imc" class="nav-link text-white"> IMC </a>
       <a routerLink="crud" class="nav-link text-white"> Cadastro Pessoa </a>
+      <a routerLink="cat" class="nav-link text-white"> Cadastro Categorias </a>
+
     </nav>
   </header>
+
+  <div class="">
+<form>
+
+<input type = "text" name="nome" [(ngModel)] = "estado.nome">
+<input type="text" name="sigla" [(ngModel)] = "estado.sigla">
+<button type = "button" name = "button" (click) = "adicionar()">add</button>
+ </form>
+
+
+<table border="1">
+  <tr *ngFor = "let est of listaEstado let i = index " >
+    <td>{{est.nome}}</td>
+      <td>{{est.sigla}}</td>
+    <td>
+      <button name = "button" (click) = "excluir(i)"> excluir</button>
+    </td>
+    <td>
+      <button name = "button" (click) = "alterar(i)"> alterar </button>
+
+    </td>
+</tr>
+  </table>
+
+  </div>
+
 </div>
+
+
+
+
 <router-outlet></router-outlet>
